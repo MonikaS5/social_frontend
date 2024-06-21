@@ -81,27 +81,21 @@
 
 
 
-.home .bi-hand-thumbs-up-fill,
-.bi-hand-thumbs-down-fill {
+.home .like .dislike {
 	color: #7a7c7b !important;
 
 	font-size: 20px;
-}
-
-.home .bi-hand-thumbs-up-fill:hover,
-.bi-hand-thumbs-down-fill:hover {
-	color: #06010e !important;
-
-}
-
-.home .like,
-.dislike {
-
 	border-radius: 50%;
 	padding: 12px;
 	margin: 5px;
 	background-color: white;
 	border: none;
+}
+
+.home .like:hover,
+.dislike:hover {
+	color: #06010e !important;
+
 }
 
 

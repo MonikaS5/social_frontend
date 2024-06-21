@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Trash } from 'react-bootstrap-icons';
+import { HandThumbsDownFill, HandThumbsUpFill, Trash } from 'react-bootstrap-icons';
 function Home() {
 	const [commentInput, setCommentInput] = useState("");
 
@@ -102,18 +102,18 @@ function Home() {
 					<div className="d-flex align-items-center gap-2 mt-3 ">
 						<div >
 							<p>Likes: {post.likes}
-								<button className="like" onClick={() => handleLike(post._id)}><i className="bi bi-hand-thumbs-up-fill"></i></button>
+								<button className="like" onClick={() => handleLike(post._id)}><h5><HandThumbsUpFill/></h5></button>
 							</p>
 						</div>
 
 						<div>
 							<p>Dislikes: {post.dislikes}
-								<button className="dislike" onClick={() => handleDislike(post._id)}><i class="bi bi-hand-thumbs-down-fill"></i></button>
+								<button className="dislike" onClick={() => handleDislike(post._id)}><h5><HandThumbsDownFill/></h5></button>
 							</p>
 						</div>
 						<div>
 
-						<p>Comments: {post.comments.length}</p>
+							<p>Comments: {post.comments.length}</p>
 						</div>
 					</div>
 					<h6> Comments : </h6>
