@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { HandThumbsDownFill, HandThumbsUpFill, Trash } from 'react-bootstrap-icons';
+
 function Home() {
 	const [commentInput, setCommentInput] = useState("");
 
