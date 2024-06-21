@@ -145,7 +145,7 @@ function Home() {
 					<p className="d-flex justify-content-start align-items-center text-end mt-5">
 						<h5> Do you want to delete this post? : </h5>
 						<button class="btn btnTrash btn-outline-danger ms-3" onClick={() => handleDelete(post._id)} type="button"> 
-							<h5 className="p-2">Delete Post < Trash /></h5></button>
+							<h5 className="p-1">Delete Post < Trash /></h5></button>
 					</p>
 
 						
