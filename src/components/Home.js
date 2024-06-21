@@ -102,13 +102,13 @@ function Home() {
 					<div className="d-flex align-items-center gap-2 mt-3 ">
 						<div >
 							<p>Likes: {post.likes}
-								<button className="like" onClick={() => handleLike(post._id)}><h5><HandThumbsUpFill/></h5></button>
+								<button className="like ms-1 btn btn-outline-secondary" onClick={() => handleLike(post._id)}><HandThumbsUpFill/></button>
 							</p>
 						</div>
 
 						<div>
 							<p>Dislikes: {post.dislikes}
-								<button className="dislike" onClick={() => handleDislike(post._id)}><h5><HandThumbsDownFill/></h5></button>
+								<button className="dislike ms-1 btn btn-outline-secondary" onClick={() => handleDislike(post._id)}><HandThumbsDownFill/></button>
 							</p>
 						</div>
 						<div>
