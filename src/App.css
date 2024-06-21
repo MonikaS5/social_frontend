@@ -98,7 +98,7 @@
 }
 
 .comment-button:hover {
-	background-color: #6610f2;
+	background-color: #087ea4;
 }
 
 
@@ -109,7 +109,7 @@
 }
 
 nav {
-	background-image: linear-gradient(to right, #060606, #0c0b0c, #050307, #06010e, #2e0276);
+	background-color:#0b0a0a;
 	padding: 20px;
 }
 
@@ -132,7 +132,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #c09ef5;
+	color:#30b2dd;
 }
 
 .create-post,
