@@ -81,21 +81,6 @@
 
 
 
-.home .like .dislike {
-	color: #7a7c7b !important;
-
-	border-radius: 50%;
-	padding: 12px;
-	
-	border: none;
-}
-
-.home .like:hover,
-.dislike:hover {
-	color: #06010e !important;
-
-}
-
 
 
 .comment-input {
