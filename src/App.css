@@ -84,11 +84,9 @@
 .home .like .dislike {
 	color: #7a7c7b !important;
 
-	font-size: 20px;
 	border-radius: 50%;
 	padding: 12px;
-	margin: 5px;
-	background-color: white;
+	
 	border: none;
 }
 
