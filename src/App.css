@@ -126,13 +126,13 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #969696;
+	color: #f6f5f5;
 	font-weight: bold;
 	font-size: 17px;
 }
 
 nav a:hover {
-	color:#f6f7f8;
+	color:#d3d5d6;
 }
 
 .create-post,
