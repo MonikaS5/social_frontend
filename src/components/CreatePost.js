@@ -52,7 +52,7 @@ function CreatePost() {
 				onChange={handleInputChange}
 			></textarea>
 			<input type="file" name="file" onChange={handleFileChange} />
-			<button className="btn btn-dark p-2" onClick={handlePostSubmit}>Post</button>
+			<button className="btn btn-outline-dark p-2" onClick={handlePostSubmit}>Post</button>
 		</div>
 	);
 }
