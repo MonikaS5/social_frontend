@@ -10,7 +10,7 @@ const EditPost = () => {
 
 	//handle for fetching posts on page load
 	useEffect(() => {
-		axios.get('https://social-b044.onrender.com/api/posts').then((response) => {
+		axios.get('https://social-b044.onrender.com/api/posts', {headers:{'Cache-control':'no-cache'}}).then((response) => {
 			setPosts(response.data);
 		});
 	}, []);

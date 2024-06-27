@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
 function CreatePost() {
+
+	const nav = useNavigate();
 	const [newPost, setNewPost] = useState({
 		title: "",
 		content: "",
@@ -24,12 +27,14 @@ function CreatePost() {
 		formData.append("title", newPost.title);
 		formData.append("content", newPost.content);
 		formData.append("file", newPost.file);
-
+		
 		axios
-			.post("https://social-b044.onrender.com/api/posts", formData)
+		.post("https://social-b044.onrender.com/api/posts", formData)
 			.then((response) => {
 				setNewPost({ title: "", content: "", file: null });
+				nav('/');
 			})
+			
 			.catch((error) => console.error("Error creating post:", error));
 	};
 
