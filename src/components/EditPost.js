@@ -34,7 +34,7 @@ const EditPost = () => {
 				axios.get('https://social-b044.onrender.com/api/posts').then((response) => {
 					setPosts(response.data);
 					setSelectedPost(null);
-					nav('/')
+					
 				});
 				
 			})
