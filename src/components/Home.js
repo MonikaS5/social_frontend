@@ -11,7 +11,7 @@ function Home() {
 
 	useEffect(() => {
 		axios
-			.get("https://social-b044.onrender.com/api/posts", {headers:{'Cache-control':'no-cache'}}
+			.get("https://social-b044.onrender.com/api/posts"
 			)
 			.then((response) => setPosts(response.data))
 			.catch((error) => console.error("Error fetching posts:", error));

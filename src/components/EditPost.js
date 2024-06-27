@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PencilSquare } from 'react-bootstrap-icons';
 
+
 const EditPost = () => {
 	const [posts, setPosts] = useState([]);
 	const [selectedPost, setSelectedPost] = useState(null);
 
 	//handle for fetching posts on page load
 	useEffect(() => {
-		axios.get('https://social-b044.onrender.com/api/posts', {headers:{'Cache-control':'no-cache'}}).then((response) => {
+		axios.get('https://social-b044.onrender.com/api/posts').then((response) => {
 			setPosts(response.data);
 		});
 	}, []);
@@ -30,6 +31,7 @@ const EditPost = () => {
 					setPosts(response.data);
 					setSelectedPost(null);
 				});
+				
 			})
 			.catch((error) => {
 				console.error('Error updating post: ', error);
