@@ -84,7 +84,7 @@ const EditPost = () => {
 
 						<div>
 							<button type="submit" className="btn btn-primary m-2">
-								Update post
+								Update Post
 							</button>
 						</div>
 					</form>
