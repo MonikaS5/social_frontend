@@ -3,12 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PencilSquare } from 'react-bootstrap-icons';
-import {useNavigate} from "react-router-dom";
 
 
 
 const EditPost = () => {
-	const nav = useNavigate();
 
 	const [posts, setPosts] = useState([]);
 	const [selectedPost, setSelectedPost] = useState(null);
