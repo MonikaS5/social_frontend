@@ -3,9 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PencilSquare } from 'react-bootstrap-icons';
+import {useNavigate} from "react-router-dom";
+
 
 
 const EditPost = () => {
+	const nav = useNavigate();
+
 	const [posts, setPosts] = useState([]);
 	const [selectedPost, setSelectedPost] = useState(null);
 
@@ -30,6 +34,7 @@ const EditPost = () => {
 				axios.get('https://social-b044.onrender.com/api/posts').then((response) => {
 					setPosts(response.data);
 					setSelectedPost(null);
+					nav('/')
 				});
 				
 			})
