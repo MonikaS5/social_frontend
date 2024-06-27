@@ -33,7 +33,7 @@ const EditPost = () => {
 					setPosts(response.data);
 					setSelectedPost(null);
 					
-				});
+				},[]);
 				
 			})
 			.catch((error) => {
